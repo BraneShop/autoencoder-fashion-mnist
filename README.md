@@ -19,3 +19,7 @@ when this feature might be cleaned up.
 4. Install requirements: `pip install -r requirements.txt`
 
 5. Run the notebook: `jupyter notebook` ... !
+
+6. Run TensorBoard with `tensorboard --logdir logs`
+
+7. Jump over to the "Projector" tab!
