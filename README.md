@@ -7,3 +7,15 @@ plotting embeddings, and _only_ plots `Embedding` layers by default.
 
 See [this issue](https://github.com/tensorflow/tensorboard/issues/2471) for
 when this feature might be cleaned up.
+
+## Setup/Running
+
+1. Clone the repo
+
+2. Create a conda environment, `conda create -n autoencoder-fashion-mnist python=3`
+
+3. Upgrade pip: `pip install pip --upgrade`
+
+4. Install requirements: `pip install -r requirements.txt`
+
+5. Run the notebook: `jupyter notebook` ... !
