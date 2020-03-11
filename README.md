@@ -10,6 +10,8 @@ when this feature might be cleaned up.
 
 ## Setup/Running
 
+#### Notebook
+
 1. Clone the repo
 
 2. Create a conda environment, `conda create -n autoencoder-fashion-mnist python=3`
@@ -23,3 +25,12 @@ when this feature might be cleaned up.
 6. Run TensorBoard with `tensorboard --logdir logs`
 
 7. Jump over to the "Projector" tab!
+
+
+#### Flask app
+
+Install the requirements, and then:
+
+```
+FLASK_APP=app.py flask run
+```
