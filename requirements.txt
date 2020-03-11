@@ -1,0 +1,5 @@
+tensorflow
+jupyter
+matplotlib
+scikit-learn
+pillow
