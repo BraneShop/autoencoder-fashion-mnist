@@ -30,7 +30,7 @@ net        = tf.keras.models.load_model( model_path
 #         display the network for good measure.
 z_dim = net.get_layer("z").output.shape[-1]
 
-print(net.summary())
+net.summary()
 
 
 # Note 3: 
@@ -38,8 +38,6 @@ print(net.summary())
 # want to run a $z$ vector through, we need to build the output from
 # a new input. So we just pick out all layers after the $z$ layer, and
 # then apply them to our input.
-print("Making sample model...")
-
 in_z   = tf.keras.Input(shape=(10))
 layers = net.layers[6:] # Layer 6 is the one after the "z" layer.
 output = in_z
@@ -47,7 +45,7 @@ for l in layers:
     output = l(output)
 
 sample_model = Model( in_z, outputs=output )
-print(sample_model.summary())
+sample_model.summary()
 
 
 @app.route("/")
